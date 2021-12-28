@@ -89,3 +89,12 @@ At shutdown, add the following code:
 		}
 
 This call will end the hidden supervisor process.
+
+### Testing AutoRestart
+
+- Start the demo app 'AutoRecoveryDemoWPF.exe' by doubleclicking.
+- The go to task manager and end this process.
+- Don't kill process tree! Only kill the single process.
+- After a few seconds the supervisor process will recognize that and restart your process.
+
+
