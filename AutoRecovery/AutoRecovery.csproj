@@ -4,10 +4,27 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/OliverAbraham/AutoRecovery</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/OliverAbraham/AutoRecovery</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageLicenseFile>license-gpl-3.0.md</PackageLicenseFile>
+  </PropertyGroup>
+	
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\TFS\Libs\Abraham.Threading\Abraham.Threading.csproj" />
+    <None Include="license-gpl-3.0.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+		
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
