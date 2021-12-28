@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AutoRecoverySupervisor": {
+      "commandName": "Project",
+      "commandLineArgs": "1234 10"
+    }
+  }
+}
