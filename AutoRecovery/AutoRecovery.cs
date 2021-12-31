@@ -1,5 +1,7 @@
 ﻿using Abraham.Threading;
+using System;
 using System.Diagnostics;
+using System.IO;
 
 namespace Abraham.AutoRecovery
 {
@@ -67,6 +69,7 @@ namespace Abraham.AutoRecovery
 			return File.Exists("CrashIndicator.eye");
 		}
 
+		#pragma warning disable 1998
 		private void StartAutoSaveScheduler(uint intervalInSeconds, Action saveDataAction)
 		{
 			_autoSaveScheduler = new Scheduler();

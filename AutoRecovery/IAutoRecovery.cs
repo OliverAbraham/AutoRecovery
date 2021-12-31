@@ -1,4 +1,6 @@
-﻿namespace Abraham.AutoRecovery
+﻿using System;
+
+namespace Abraham.AutoRecovery
 {
 	/// <summary>
 	/// AutoRecovery library. Provides two functions:
@@ -12,10 +14,10 @@
 	/// </summary>
 	public interface IAutoRecovery
 	{
-		public bool AppHasCrashed { get; }
-		public int RestartCheckIntervalInSeconds { get; set; }
-		public void NormalShutdown();
-		public void EnableAutoSave(uint intervalInSeconds, Action saveDataAction);
-		public void EnableAutoRestart(bool startVisible = false);
+		bool AppHasCrashed { get; }
+		int RestartCheckIntervalInSeconds { get; set; }
+		void NormalShutdown();
+		void EnableAutoSave(uint intervalInSeconds, Action saveDataAction);
+		void EnableAutoRestart(bool startVisible = false);
 	}
 }

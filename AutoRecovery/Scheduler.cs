@@ -122,6 +122,7 @@ namespace Abraham.Threading
 			}
         }
 
+		#pragma warning disable 1998
 		private async Task NullObject()
 		{
 		}
