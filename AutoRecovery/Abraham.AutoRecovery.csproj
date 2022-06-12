@@ -20,6 +20,8 @@ and a supervisor process to automatically restart your app after a crash.</Descr
     <Copyright>Oliver Abraham</Copyright>
     <PackageIcon>Ciridata.png</PackageIcon>
     <IncludeSymbols>False</IncludeSymbols>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Changed license to Apache 2.0 and added an icon</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
