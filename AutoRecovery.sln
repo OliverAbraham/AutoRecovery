@@ -11,7 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRecoverySupervisor", "A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B4EA8AC-F0D5-47AB-BD41-5EB9724299A5}"
 	ProjectSection(SolutionItems) = preProject
-		license-gpl-3.0.md = license-gpl-3.0.md
 		README.md = README.md
 	EndProjectSection
 EndProject

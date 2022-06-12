@@ -8,14 +8,33 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/OliverAbraham/AutoRecovery</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageLicenseFile>license-gpl-3.0.md</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <ApplicationIcon>Ciridata.ico</ApplicationIcon>
+    <Title>Abraham.AutoRecovery</Title>
+    <Description>This library provides a scheduler for automatically saving user data 
+and a supervisor process to automatically restart your app after a crash.</Description>
+    <Copyright>Oliver Abraham</Copyright>
+    <PackageIcon>Ciridata.png</PackageIcon>
+    <IncludeSymbols>False</IncludeSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Ciridata.ico" />
+  </ItemGroup>
 	
   <ItemGroup>
+    <None Include="..\Ciridata.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="license-gpl-3.0.md" Pack="true" PackagePath="" />
   </ItemGroup>
 		
