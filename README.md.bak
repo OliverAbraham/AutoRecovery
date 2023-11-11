@@ -1,16 +1,13 @@
 # Abraham.AutoRecovery
 
-![](https://img.shields.io/github/downloads/oliverabraham/AutoRecovery/total) ![](https://img.shields.io/github/license/oliverabraham/AutoRecovery) ![](https://img.shields.io/github/languages/count/oliverabraham/AutoRecovery) ![GitHub Repo stars](https://img.shields.io/github/stars/oliverabraham/AutoRecovery?label=repo%20stars) ![GitHub Repo stars](https://img.shields.io/github/stars/oliverabraham?label=user%20stars)
 
-
-## OVERVIEW
-
+## Abstract
 
 This library provides a scheduler for automatically saving user data 
 and a supervisor process to automatically restart your app after a crash.
 
 
-## LICENSE
+## License
 
 Licensed under Apache licence.
 https://www.apache.org/licenses/LICENSE-2.0
@@ -18,17 +15,7 @@ https://www.apache.org/licenses/LICENSE-2.0
 
 ## Compatibility
 
-The nuget package was build with DotNET standard 2.0.
-
-
-## Source code
-
-The source code is available on GitHub:
-https://github.com/OliverAbraham/AutoRecovery
-
-The nuget package is available on nuget.org:
-https://www.nuget.org/packages/Abraham.AutoRecovery/
-
+The nuget package was build with DotNET 6.
 
 
 ## Example
@@ -96,20 +83,20 @@ At startup of your app, add the following code.
 (You'll want to change startVisible to false after verifying it's working):
 
 ```C#
-private void Window_Loaded(object sender, RoutedEventArgs e)
-{
-	_autoRecovery.EnableAutoRestart(startVisible: true); // restart this app after crash, start visible for Demo only!
-}
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			_autoRecovery.EnableAutoRestart(startVisible: true); // restart this app after crash, start visible for Demo only!
+		}
 ```
 
 
 At shutdown, add the following code:
 
 ```C#
-private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-{
-	_autoRecovery.NormalShutdown();
-}
+		private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+		{
+			_autoRecovery.NormalShutdown();
+		}
 ```
 
 This call will end the hidden supervisor process.
@@ -136,7 +123,7 @@ This is very simple:
 
 or from NuGet Command-Line:
 
-    Install-Package Abraham.AutoRecovery
+    Install-Package Abraham.ProgramSettingsManager
 
 
 
@@ -150,11 +137,3 @@ Please feel free to comment and suggest improvements!
 
 
 
-
-
-# MAKE A DONATION !
-
-If you find this application useful, buy me a coffee!
-I would appreciate a small donation on https://www.buymeacoffee.com/oliverabraham
-
-<a href="https://www.buymeacoffee.com/app/oliverabraham" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
